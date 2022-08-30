@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MVCApp.Models;
 
 namespace MVCApp.Controllers
 {
@@ -6,7 +7,8 @@ namespace MVCApp.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var dog = new DogViewModel { Name = "dog", Age = 5 };
+            return View(dog);
         }
         public IActionResult Hello()
         {
