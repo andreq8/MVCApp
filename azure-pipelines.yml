@@ -13,5 +13,8 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: dotnet build MVCApp/MVCApp/MVCApp.csproj --configuration $(buildConfiguration)
+- script: dotnet build andreq8/MVCApp/MVCApp/MVCApp.csproj --configuration $(buildConfiguration)
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
   displayName: 'dotnet build $(buildConfiguration)'
