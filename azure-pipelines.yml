@@ -13,5 +13,5 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: dotnet build https://github.com/andreq8/MVCApp/MVCApp/MVCApp.csproj --configuration $(buildConfiguration)
+- script: dotnet build MVCApp/MVCApp/MVCApp.csproj --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
