@@ -8,9 +8,9 @@ namespace MVCApp.Controllers
         {
             return View();
         }
-        public string Hello()
+        public IActionResult Hello()
         {
-            return "Hello cruel world!";
+            return View();
         }
     }
 }
