@@ -4,9 +4,9 @@ namespace MVCApp.Controllers
 {
     public class HelloWorldController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "this is the hello world page";
+            return View();
         }
         public string Hello()
         {
