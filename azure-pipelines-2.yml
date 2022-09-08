@@ -23,7 +23,7 @@ steps:
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'Azure subscription 1(05d81c4b-fb19-45ef-b1d9-0ec64dd49c55)'
-    appType: 'webAppLinux'
+    appType: 'webApp'
     appName: 'udemyCourseDevOps'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     runtimeStack: 'DOTNETCORE|6.0'
