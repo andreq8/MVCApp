@@ -75,7 +75,6 @@ stages:
             displayName: 'Azure Web App Deploy: Matt-Test-NodeJS-Deploy'
             inputs:
               azureSubscription: $(azureSubscription)
-              appType: webAppLinux
+              appType: webApp
               appName: $(webAppName)
-              runtimeStack: 'NODE|10.14'
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
